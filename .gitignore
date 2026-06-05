@@ -1,0 +1,15 @@
+/[Ll]ibrary/
+/[罢emp]/
+/[Oo]bj/
+/[Build]/
+/[Builds]/
+/[Logs]/
+/[UserSettings]/
+MemoryCaptures/
+SystemGraphs/
+.vs/
+.idea/
+*.csproj
+*.sln
+*.unityproj
+*.suo
