@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.10f1 (e35f0c77bd8e) revision 14901004'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 15720 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-tgond" at "2026-06-05T11:04:46.4522072Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-tgond" at "2026-06-06T10:42:40.0976191Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-06-05T11:04:46Z
+Date: 2026-06-06T10:42:40Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ D:/Game dev/Projects/Basic Platformer (Kenney) 2D
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-51078
+61692
 -licensingIpc
 LicenseClient-tgond
 -job-worker-count
@@ -67,12 +67,12 @@ D:/Game dev/Projects/Basic Platformer (Kenney) 2D
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [24780]  Target information:
+Player connection [5172]  Target information:
 
-Player connection [24780]  * "[IP] 192.168.18.128 [Port] 0 [Flags] 2 [Guid] 2078009984 [EditorId] 2078009984 [Version] 1048832 [Id] WindowsEditor(7,Talal) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [5172]  * "[IP] 192.168.0.103 [Port] 0 [Flags] 2 [Guid] 3675345866 [EditorId] 3675345866 [Version] 1048832 [Id] WindowsEditor(7,Talal) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [24780] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [24780] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [5172] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [5172] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -84,7 +84,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 2.55 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 7.14 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.10f1 (e35f0c77bd8e)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -100,44 +100,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56832
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56540
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001842 seconds.
-- Loaded All Assemblies, in  0.562 seconds
+Registered in 0.007744 seconds.
+- Loaded All Assemblies, in  2.100 seconds
 Native extension for WindowsStandalone target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.536 seconds
-Domain Reload Profiling: 1094ms
-	BeginReloadAssembly (228ms)
+- Finished resetting the current domain, in  1.896 seconds
+Domain Reload Profiling: 3980ms
+	BeginReloadAssembly (664ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (65ms)
-	LoadAllAssembliesAndSetupDomain (208ms)
-		LoadAssemblies (223ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (180ms)
+	RebuildNativeTypeToScriptingClass (54ms)
+	initialDomainReloadingComplete (283ms)
+	LoadAllAssembliesAndSetupDomain (901ms)
+		LoadAssemblies (641ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (204ms)
-			TypeCache.Refresh (202ms)
-				TypeCache.ScanAssembly (184ms)
+		AnalyzeDomain (889ms)
+			TypeCache.Refresh (884ms)
+				TypeCache.ScanAssembly (836ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (537ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (1898ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (471ms)
+		SetupLoadedEditorAssemblies (1699ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (53ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (105ms)
-			ProcessInitializeOnLoadAttributes (195ms)
-			ProcessInitializeOnLoadMethodAttributes (112ms)
+			InitializePlatformSupportModulesInManaged (194ms)
+			SetLoadedEditorAssemblies (20ms)
+			BeforeProcessingInitializeOnLoad (473ms)
+			ProcessInitializeOnLoadAttributes (651ms)
+			ProcessInitializeOnLoadMethodAttributes (361ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -147,28 +147,30 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.17.4+4293ba1
-  Session Id:              ed6f80b461ba4134830fec1f3d9eac27
-  Correlation Id:          822a4de3e0cac0f4e7e240999d4f6f99
-  External correlation Id: 8388846744292208460
-  Machine Id:              ifs8HJZfsmNNycVd4ReIk1xBE9k=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-tgond" (connect: 0.00s, validation: 0.00s, handshake: 2.90s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-tgond-notifications" at "2026-06-05T11:04:49.3570349Z"
-[Licensing::Module] Licensing Background thread has ended after 2.91s
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              913ceb1328af43bf94d05914127245b0
+  Correlation Id:          f97d3ac9ec75fcf77c64d40a112ef26a
+  External correlation Id: 8898642635226365255
+  Machine Id:              ifs8HJZfsmNNycVd4ReIk1xBE9k=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-tgond" (connect: 0.00s, validation: 0.01s, handshake: 10.13s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-tgond-notifications" at "2026-06-06T10:42:50.2317812Z"
+[Licensing::Module] Licensing Background thread has ended after 10.14s
+[Licensing::Module] Licensing is initialized (took 0.66s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 18966797524462-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  1.226 seconds
+- Loaded All Assemblies, in  3.453 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 1.19 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.41 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Package Manager log level set to [2]
@@ -180,46 +182,446 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.279 seconds
-Domain Reload Profiling: 2500ms
-	BeginReloadAssembly (204ms)
+- Finished resetting the current domain, in  3.445 seconds
+Domain Reload Profiling: 6888ms
+	BeginReloadAssembly (1285ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (22ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (41ms)
-	LoadAllAssembliesAndSetupDomain (925ms)
-		LoadAssemblies (582ms)
+		CreateAndSetChildDomain (93ms)
+	RebuildCommonClasses (115ms)
+	RebuildNativeTypeToScriptingClass (48ms)
+	initialDomainReloadingComplete (127ms)
+	LoadAllAssembliesAndSetupDomain (1868ms)
+		LoadAssemblies (1360ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (454ms)
-			TypeCache.Refresh (320ms)
-				TypeCache.ScanAssembly (289ms)
-			BuildScriptInfoCaches (115ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (1279ms)
+		AnalyzeDomain (860ms)
+			TypeCache.Refresh (579ms)
+				TypeCache.ScanAssembly (543ms)
+			BuildScriptInfoCaches (229ms)
+			ResolveRequiredComponents (41ms)
+	FinalizeReload (3446ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1077ms)
+		SetupLoadedEditorAssemblies (2998ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (260ms)
-			ProcessInitializeOnLoadAttributes (640ms)
-			ProcessInitializeOnLoadMethodAttributes (159ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (17ms)
+			BeforeProcessingInitializeOnLoad (681ms)
+			ProcessInitializeOnLoadAttributes (1838ms)
+			ProcessInitializeOnLoadMethodAttributes (433ms)
+			AfterProcessingInitializeOnLoad (24ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.54 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (40ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 2.47 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7315 unused Assets / (4.5 MB). Loaded Objects now: 8136.
-Memory consumption went from 154.8 MB to 150.2 MB.
-Total: 22.033600 ms (FindLiveObjects: 1.518600 ms CreateObjectMapping: 1.722900 ms MarkObjects: 13.321500 ms  DeleteObjects: 5.468400 ms)
+Unloading 7315 unused Assets / (5.1 MB). Loaded Objects now: 8136.
+Memory consumption went from 158.4 MB to 153.3 MB.
+Total: 22.543600 ms (FindLiveObjects: 1.252300 ms CreateObjectMapping: 1.382700 ms MarkObjects: 13.982600 ms  DeleteObjects: 5.923900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2647.118953 seconds.
+  path: Assets/UI/healthbar/pulse/vertical/no-heart-pulse-vertical-empty-2.png
+  artifactKey: Guid(5e40d2a1fd4f91e4fb11e07a2bc3f3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/vertical/no-heart-pulse-vertical-empty-2.png using Guid(5e40d2a1fd4f91e4fb11e07a2bc3f3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc2e3fdd8b0346e706456b453182b7aa') in 0.1792467 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/UI/healthbar/pulse/vertical/pulse-vertical-3.png
+  artifactKey: Guid(7177bc908ed2c2b4d89da328c89826aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/vertical/pulse-vertical-3.png using Guid(7177bc908ed2c2b4d89da328c89826aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6b23afc1e6a27b1422aa02b27d02f409') in 0.021523 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/UI/healthbar/pulse/vertical/pulse-full-3.png
+  artifactKey: Guid(3af9d554f725f3c42a0be20ae59b4b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/vertical/pulse-full-3.png using Guid(3af9d554f725f3c42a0be20ae59b4b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b61dd74799224b9b4839de551900de87') in 0.0182775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/UI/healthbar/pulse/vertical/pulse-empty-2.png
+  artifactKey: Guid(421958c358225e4499c14030001e9409) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/vertical/pulse-empty-2.png using Guid(421958c358225e4499c14030001e9409) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae4cbd22ddf977e5fa2eb54306c333ed') in 0.0169259 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/UI/healthbar/pulse/vertical/pulse-full-1.png
+  artifactKey: Guid(32987e9cafa9e1f44a785b625a0bb75d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/vertical/pulse-full-1.png using Guid(32987e9cafa9e1f44a785b625a0bb75d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fbc7ac9d756a02e69e4e3b5d1a47ba5a') in 0.0166748 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/UI/healthbar/pulse/vertical/pulse-empty-3.png
+  artifactKey: Guid(09152688115ae884bb48c4391efe6ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/vertical/pulse-empty-3.png using Guid(09152688115ae884bb48c4391efe6ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38e77f3683589bfe453017f485fbfac2') in 0.0191493 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/UI/healthbar/pulse/vertical/pulse-empty-1.png
+  artifactKey: Guid(ac26e1c1a2991d744b99144bf1aa6e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/vertical/pulse-empty-1.png using Guid(ac26e1c1a2991d744b99144bf1aa6e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc00a8ec4c8036d4381094f1d02d4c24') in 0.016906 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.588258 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/no-heart-pulse-empty-2.png
+  artifactKey: Guid(85360961bee53be4795fee0f8d5115a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/horizontal/no-heart-pulse-empty-2.png using Guid(85360961bee53be4795fee0f8d5115a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c1e346a657b8483766bbc251f40b9b3') in 0.0174373 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/pulse-empty-1.png
+  artifactKey: Guid(f263844a407f136429546a1c542c684a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/horizontal/pulse-empty-1.png using Guid(f263844a407f136429546a1c542c684a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '23920447db9a98390dac50dbb1e6f73e') in 0.0184596 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/pulse-3.png
+  artifactKey: Guid(04d068ac6dc469b46949db1e0d4eae36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/horizontal/pulse-3.png using Guid(04d068ac6dc469b46949db1e0d4eae36) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '465f44032dbbbff8d96dc6ed06ba51e5') in 0.0223022 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/pulse-empty-2.png
+  artifactKey: Guid(bb18f906681872b448b463d80cc26675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/horizontal/pulse-empty-2.png using Guid(bb18f906681872b448b463d80cc26675) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6790efaa1df706c950fd8cfd10097d25') in 0.0142319 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/no-heart-pulse-full-3.png
+  artifactKey: Guid(c1076d7164fd1f2469e9da649913d419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/horizontal/no-heart-pulse-full-3.png using Guid(c1076d7164fd1f2469e9da649913d419) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '58eed5b0e5adc63ae938465339084487') in 0.0134603 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/no-heart-pulse-full-2.png
+  artifactKey: Guid(eb07f769d99d35747b3ab923bfeb61af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/horizontal/no-heart-pulse-full-2.png using Guid(eb07f769d99d35747b3ab923bfeb61af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e7183cf17eb8b645c378bb20cce9cfb1') in 0.0140143 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/pulse-1.png
+  artifactKey: Guid(698e560cdbcbc1f43b9c2efec165b68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/horizontal/pulse-1.png using Guid(698e560cdbcbc1f43b9c2efec165b68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a2781150b99c7da5b806d57d96183e23') in 0.0166476 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/pulse-full-1.png
+  artifactKey: Guid(e14d5f5bd18eeb9428669fae38afd7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/horizontal/pulse-full-1.png using Guid(e14d5f5bd18eeb9428669fae38afd7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bce62c3a457f5230c9ad61d199a14c8a') in 0.0159918 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.673138 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/no-heart-pulse-empty-2.png
+  artifactKey: Guid(85360961bee53be4795fee0f8d5115a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/horizontal/no-heart-pulse-empty-2.png using Guid(85360961bee53be4795fee0f8d5115a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '97c60c78f05ef0ab077a6a0d00293f30') in 0.0246377 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/pulse-3.png
+  artifactKey: Guid(04d068ac6dc469b46949db1e0d4eae36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/horizontal/pulse-3.png using Guid(04d068ac6dc469b46949db1e0d4eae36) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '725375d1624a69f1a5eded6edba7911a') in 0.0214512 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/no-heart-pulse-full-1.png
+  artifactKey: Guid(918a37481e415f54cacd265cb57429a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/horizontal/no-heart-pulse-full-1.png using Guid(918a37481e415f54cacd265cb57429a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '97be946a6d49063f424190bfadb7acf1') in 0.018743 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/pulse-full-3.png
+  artifactKey: Guid(edfb18db11e82ad4d83bb2ea8a4a69e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/horizontal/pulse-full-3.png using Guid(edfb18db11e82ad4d83bb2ea8a4a69e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '30b3b63105909ab126b3d46d071bb112') in 0.0174527 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.347766 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/pulse-2.png
+  artifactKey: Guid(2819ebed01ac66f47a41134c5d8a95df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI/healthbar/pulse/horizontal/pulse-2.png using Guid(2819ebed01ac66f47a41134c5d8a95df) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1fd2bd83ab8b7e8f5e6ba24c7d92a70d') in 0.3900852 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/pulse-3.png
+  artifactKey: Guid(04d068ac6dc469b46949db1e0d4eae36) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI/healthbar/pulse/horizontal/pulse-3.png using Guid(04d068ac6dc469b46949db1e0d4eae36) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3245adb2c41e5e58d57e8ecbcce0528e') in 0.0319813 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/pulse-full-3.png
+  artifactKey: Guid(edfb18db11e82ad4d83bb2ea8a4a69e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI/healthbar/pulse/horizontal/pulse-full-3.png using Guid(edfb18db11e82ad4d83bb2ea8a4a69e5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f3e4d1b09dbfb21013478f36ba7cfab1') in 0.0404482 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/pulse-empty-2.png
+  artifactKey: Guid(bb18f906681872b448b463d80cc26675) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI/healthbar/pulse/horizontal/pulse-empty-2.png using Guid(bb18f906681872b448b463d80cc26675) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '54e008428961a562111d1901f6f4e55f') in 0.0352232 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 168.687243 seconds.
+  path: Assets/UI/healthbar/standard
+  artifactKey: Guid(01f5e70a89c9fde45a39ae2d3c2f69de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard using Guid(01f5e70a89c9fde45a39ae2d3c2f69de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3d8e56464ff1feb39060c83114c2bc42') in 0.0012452 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.669027 seconds.
+  path: Assets/UI/healthbar/standard/vertical
+  artifactKey: Guid(3949cf5e443bce744b6b42269f775485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/vertical using Guid(3949cf5e443bce744b6b42269f775485) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6ca90b60ef6da982b59ee76db9033be0') in 0.0015369 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/UI/healthbar/standard/vertical/no-heart-standard-vertical-empty-1.png
+  artifactKey: Guid(4a3471980fa021848a63aaf62e8f525f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/vertical/no-heart-standard-vertical-empty-1.png using Guid(4a3471980fa021848a63aaf62e8f525f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f8eda90cc391ffacf4d8be73d59e1ff') in 0.0192588 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/UI/healthbar/standard/vertical/no-heart-standard-vertical-full-3.png
+  artifactKey: Guid(cdbd2ed241b5758438aadcc2732493d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/vertical/no-heart-standard-vertical-full-3.png using Guid(cdbd2ed241b5758438aadcc2732493d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ce69ad1cb9e9d9b553519e522ecbc4bf') in 0.0160966 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/UI/healthbar/standard/vertical/standard-vertical-full-2.png
+  artifactKey: Guid(e6cc4f583c91ada4eb03776396cd8fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/vertical/standard-vertical-full-2.png using Guid(e6cc4f583c91ada4eb03776396cd8fef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd3f81dbe1466d9696cabbcadeed08ef3') in 0.01599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/UI/healthbar/standard/vertical/standard-vertical-empty-2.png
+  artifactKey: Guid(a14482beec3d3724abc1b3438146be54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/vertical/standard-vertical-empty-2.png using Guid(a14482beec3d3724abc1b3438146be54) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cb94c567d7683ae1dca0296671ae9aaf') in 0.0195481 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/UI/healthbar/standard/vertical/standard-vertical-empty-3.png
+  artifactKey: Guid(8a13335555aab804283e071a6b2e165c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/vertical/standard-vertical-empty-3.png using Guid(8a13335555aab804283e071a6b2e165c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3dd769d4d837e6350900002d9569915e') in 0.0190521 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/UI/healthbar/standard/vertical/standard-vertical-full-3.png
+  artifactKey: Guid(150b86199ba118a4fb8292b305172060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/vertical/standard-vertical-full-3.png using Guid(150b86199ba118a4fb8292b305172060) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e6730bc8f2d9e566aa745fc869ada9d') in 0.0210764 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/UI/healthbar/standard/vertical/no-heart-standard-vertical-full-1.png
+  artifactKey: Guid(85aca0c8eac7a0042a0fcee742fa7cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/vertical/no-heart-standard-vertical-full-1.png using Guid(85aca0c8eac7a0042a0fcee742fa7cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0d5e8f9232b5eafafc01627cf059d56') in 0.0180134 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.089020 seconds.
+  path: Assets/UI/healthbar/standard/horizontal
+  artifactKey: Guid(7b4792ea6f4f3c8469bf3e8941b6a911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/horizontal using Guid(7b4792ea6f4f3c8469bf3e8941b6a911) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c8cb07889ec5f2041b5e3b4c23f9aa4e') in 0.0011439 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.068722 seconds.
+  path: Assets/UI/healthbar/standard/horizontal/no-heart-standard-empty-1.png
+  artifactKey: Guid(4b42acf2ec01c4a4bbdc6fbcc07392b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/horizontal/no-heart-standard-empty-1.png using Guid(4b42acf2ec01c4a4bbdc6fbcc07392b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e753fcb918004c450817065341c4bbfd') in 0.0163229 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/UI/healthbar/standard/horizontal/no-heart-standard-full-3.png
+  artifactKey: Guid(1debf1fa6a6daed438b3060325939fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/horizontal/no-heart-standard-full-3.png using Guid(1debf1fa6a6daed438b3060325939fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26c5cb2e9b3bf33703155b3649775368') in 0.0163001 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/UI/healthbar/standard/horizontal/standard-3.png
+  artifactKey: Guid(971ab95ad9d687549ba90714ad184c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/horizontal/standard-3.png using Guid(971ab95ad9d687549ba90714ad184c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0adbec6eb262881884269e6006980484') in 0.0157451 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/UI/healthbar/standard/horizontal/no-heart-standard-empty-3.png
+  artifactKey: Guid(07e7c0cd883d81c43b95fe8afde221c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/horizontal/no-heart-standard-empty-3.png using Guid(07e7c0cd883d81c43b95fe8afde221c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bbd2cf8199c8bfd1d04e41c601bc69b6') in 0.0162838 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/UI/healthbar/standard/horizontal/standard-empty-3.png
+  artifactKey: Guid(6fe38ae3a91380941a0baf14dae656c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/horizontal/standard-empty-3.png using Guid(6fe38ae3a91380941a0baf14dae656c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bb4630d33f2ec74cc192ac7ff3e63ee8') in 0.0160206 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/UI/healthbar/standard/horizontal/standard-empty-1.png
+  artifactKey: Guid(0739c3c7d9c61a943bb21c50d5e0b78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/horizontal/standard-empty-1.png using Guid(0739c3c7d9c61a943bb21c50d5e0b78d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f0d6110d75f43a105792f8e8ae540b2f') in 0.0146707 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/UI/healthbar/standard/horizontal/standard-2.png
+  artifactKey: Guid(f6b8aca9e303cb741a921812917ee8dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/horizontal/standard-2.png using Guid(f6b8aca9e303cb741a921812917ee8dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dfc2cf516391aa5984a5f4dee8e57714') in 0.0153844 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/UI/healthbar/standard/horizontal/standard-full-1.png
+  artifactKey: Guid(ef69bdd4a36fa8146a15bdda5f8639c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/horizontal/standard-full-1.png using Guid(ef69bdd4a36fa8146a15bdda5f8639c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c28cad4a5423f7080ac802e23a3a00e1') in 0.018368 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.455075 seconds.
+  path: Assets/UI/healthbar/standard/horizontal/no-heart-standard-empty-1.png
+  artifactKey: Guid(4b42acf2ec01c4a4bbdc6fbcc07392b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/horizontal/no-heart-standard-empty-1.png using Guid(4b42acf2ec01c4a4bbdc6fbcc07392b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6cf9b341abafcac4458846b6356bcc0a') in 0.0182986 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/UI/healthbar/standard/horizontal/no-heart-standard-full-3.png
+  artifactKey: Guid(1debf1fa6a6daed438b3060325939fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/horizontal/no-heart-standard-full-3.png using Guid(1debf1fa6a6daed438b3060325939fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51f7df8699b657021e53ebfbef01539d') in 0.0181005 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/UI/healthbar/standard/horizontal/no-heart-standard-full-2.png
+  artifactKey: Guid(8994da06a9487e24bbd70a8b08ff4453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/horizontal/no-heart-standard-full-2.png using Guid(8994da06a9487e24bbd70a8b08ff4453) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '165b3b4bc945fdd028df59050c5d10bb') in 0.0163604 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/UI/healthbar/standard/horizontal/standard-full-3.png
+  artifactKey: Guid(7d363998def8fd849a9b5b3f4afefae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/standard/horizontal/standard-full-3.png using Guid(7d363998def8fd849a9b5b3f4afefae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd6d2b3a0992d535b67207b28b65c98e') in 0.01752 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.344244 seconds.
+  path: Assets/UI/healthbar/standard/horizontal/standard-full-1.png
+  artifactKey: Guid(ef69bdd4a36fa8146a15bdda5f8639c2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI/healthbar/standard/horizontal/standard-full-1.png using Guid(ef69bdd4a36fa8146a15bdda5f8639c2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '09d8da92a8d90d2fdb1d3903e8ea8a33') in 0.0471087 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/UI/healthbar/standard/horizontal/standard-full-3.png
+  artifactKey: Guid(7d363998def8fd849a9b5b3f4afefae4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI/healthbar/standard/horizontal/standard-full-3.png using Guid(7d363998def8fd849a9b5b3f4afefae4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '95ac1b0fa35b4e4d6c5fa49116b34168') in 0.040999 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/UI/healthbar/standard/horizontal/standard-full-2.png
+  artifactKey: Guid(278c5675ebbfa7b44be36a57a3e04d64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI/healthbar/standard/horizontal/standard-full-2.png using Guid(278c5675ebbfa7b44be36a57a3e04d64) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '776a72d7dc270c94e3020cdbed0e3b25') in 0.0457371 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/UI/healthbar/standard/horizontal/standard-3.png
+  artifactKey: Guid(971ab95ad9d687549ba90714ad184c4f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI/healthbar/standard/horizontal/standard-3.png using Guid(971ab95ad9d687549ba90714ad184c4f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7f3c428c3c35111a6f5c42d8ac408b2c') in 0.0326765 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/UI/healthbar/standard/horizontal/no-heart-standard-empty-1.png
+  artifactKey: Guid(4b42acf2ec01c4a4bbdc6fbcc07392b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI/healthbar/standard/horizontal/no-heart-standard-empty-1.png using Guid(4b42acf2ec01c4a4bbdc6fbcc07392b6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e791d5f8c6da220419bcbd73fa57aa42') in 0.0450999 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

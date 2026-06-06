@@ -255,8 +255,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -4.6000047, y: 0}
-  m_SizeDelta: {x: -9.19999, y: 0}
+  m_AnchoredPosition: {x: -4.6000047, y: 13.8}
+  m_SizeDelta: {x: -9.19999, y: 27.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &43472362
 MonoBehaviour:
@@ -278,8 +278,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 2979506171863927074, guid: bb18f906681872b448b463d80cc26675, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -8964,8 +8964,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10, y: 0}
+  m_AnchoredPosition: {x: 18.95, y: 14.4}
+  m_SizeDelta: {x: 13.9000025, y: 10.890001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &218895777
 MonoBehaviour:
@@ -8987,8 +8987,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 3403141450358706016, guid: f6b8aca9e303cb741a921812917ee8dc, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -9030,7 +9030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &334473845
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10410,6 +10410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UI_Handler
   health: {fileID: 2065061179}
   healthBar: {fileID: 1824908230}
+  animRate: 1.5
   pauseMenu: {fileID: 282667555}
   resumeButton: {fileID: 1669226568}
   quitButton: {fileID: 504106464}
@@ -10582,7 +10583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4020729582351445713, guid: 4996fc73cd58f5e45bd1c73363ae272a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5555719555811465362, guid: 4996fc73cd58f5e45bd1c73363ae272a, type: 3}
       propertyPath: m_IsActive
@@ -15936,14 +15937,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 43472361}
   - {fileID: 2123863678}
+  - {fileID: 43472361}
   - {fileID: 334473845}
   m_Father: {fileID: 17347375}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 85.6, y: -17.1}
+  m_AnchoredPosition: {x: 85.35, y: -35.8}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1824908230
@@ -15993,7 +15994,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.803
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -25026,7 +25027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   health: 100
-  maxHealth: 3
+  maxHealth: 35
   checkpoints: {fileID: 1372133189}
   playerMovement: {fileID: 2065061173}
 --- !u!82 &2065061180
@@ -25436,8 +25437,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: -17.405, y: -1.1500001}
+  m_SizeDelta: {x: -37.95, y: -2.2999997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &7875044785171955861
 PrefabInstance:

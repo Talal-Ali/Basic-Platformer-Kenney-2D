@@ -39,7 +39,6 @@ public class Health : MonoBehaviour
     }
     public float healthpercentage()
     {
-        float healthPercent = (float)health / maxHealth * 100f;
-        return healthPercent;
+        return (float)health / maxHealth;
     }
 }

@@ -5,6 +5,7 @@ public class UI_Handler : MonoBehaviour
     [Header("Health UI")]
     public Health health;
     public Slider healthBar;
+    public float animRate = 1.5f;
 
     [Header("Pause Menu")]
     public GameObject pauseMenu;
@@ -21,7 +22,7 @@ public class UI_Handler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        healthBar.value = health.healthpercentage();
+        ChangeHealth();
         Pause();
         ResumeGame();
         QuitGame();
@@ -51,6 +52,13 @@ public class UI_Handler : MonoBehaviour
     void QuitApplication()
     {
         Application.Quit();
+    }
+    void ChangeHealth()
+    {
+        if (healthBar != null && health != null)
+        {
+            healthBar.value = Mathf.Lerp(healthBar.value, health.healthpercentage(), animRate * Time.deltaTime);
+        }
     }
 
 }

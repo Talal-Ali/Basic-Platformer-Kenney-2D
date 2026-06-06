@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.10f1 (e35f0c77bd8e) revision 14901004'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-tgond" at "2026-06-06T10:44:58.9046466Z"
 OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 15720 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-tgond" at "2026-06-05T15:10:40.5405943Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-06-05T15:10:40Z
+Date: 2026-06-06T10:44:58Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Unity.exe
@@ -19,7 +19,7 @@ D:/Game dev/Projects/Basic Platformer (Kenney) 2D
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-51078
+61692
 -licensingIpc
 LicenseClient-tgond
 -job-worker-count
@@ -67,12 +67,12 @@ D:/Game dev/Projects/Basic Platformer (Kenney) 2D
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [33884]  Target information:
+Player connection [32492]  Target information:
 
-Player connection [33884]  * "[IP] 192.168.18.128 [Port] 0 [Flags] 2 [Guid] 3836424245 [EditorId] 3836424245 [Version] 1048832 [Id] WindowsEditor(7,Talal) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [32492]  * "[IP] 192.168.0.103 [Port] 0 [Flags] 2 [Guid] 3543391182 [EditorId] 3543391182 [Version] 1048832 [Id] WindowsEditor(7,Talal) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [33884] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [33884] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [32492] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [32492] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -84,8 +84,8 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 8.87 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 6.43 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.01 ms.
 Initialize engine version: 6000.3.10f1 (e35f0c77bd8e)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/Game dev/Projects/Basic Platformer (Kenney) 2D/Assets
@@ -100,75 +100,77 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56000
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56876
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002757 seconds.
-- Loaded All Assemblies, in  0.797 seconds
+Registered in 0.004616 seconds.
+- Loaded All Assemblies, in  1.221 seconds
 Native extension for WindowsStandalone target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.874 seconds
-Domain Reload Profiling: 1666ms
-	BeginReloadAssembly (211ms)
+- Finished resetting the current domain, in  1.201 seconds
+Domain Reload Profiling: 2412ms
+	BeginReloadAssembly (385ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (79ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (79ms)
-	LoadAllAssembliesAndSetupDomain (402ms)
-		LoadAssemblies (206ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (100ms)
+	RebuildNativeTypeToScriptingClass (41ms)
+	initialDomainReloadingComplete (143ms)
+	LoadAllAssembliesAndSetupDomain (541ms)
+		LoadAssemblies (372ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (396ms)
-			TypeCache.Refresh (393ms)
-				TypeCache.ScanAssembly (367ms)
+		AnalyzeDomain (532ms)
+			TypeCache.Refresh (527ms)
+				TypeCache.ScanAssembly (494ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (875ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (1202ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (768ms)
+		SetupLoadedEditorAssemblies (1067ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (87ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (190ms)
-			ProcessInitializeOnLoadAttributes (307ms)
-			ProcessInitializeOnLoadMethodAttributes (174ms)
+			InitializePlatformSupportModulesInManaged (138ms)
+			SetLoadedEditorAssemblies (14ms)
+			BeforeProcessingInitializeOnLoad (293ms)
+			ProcessInitializeOnLoadAttributes (413ms)
+			ProcessInitializeOnLoadMethodAttributes (207ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.17.4+4293ba1
-  Session Id:              7a38d477eb3d4b76a98a81f8cb3611c4
-  Correlation Id:          822a4de3e0cac0f4e7e240999d4f6f99
-  External correlation Id: 5822688223255872354
-  Machine Id:              ifs8HJZfsmNNycVd4ReIk1xBE9k=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-tgond" (connect: 0.00s, validation: 0.00s, handshake: 4.21s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-tgond-notifications" at "2026-06-05T15:10:44.7482808Z"
-[Licensing::Module] Licensing Background thread has ended after 4.21s
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              6bbe10d8be2e49dda8d8ec139d996b69
+  Correlation Id:          f97d3ac9ec75fcf77c64d40a112ef26a
+  External correlation Id: 3548297402297306422
+  Machine Id:              ifs8HJZfsmNNycVd4ReIk1xBE9k=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-tgond" (connect: 0.00s, validation: 0.00s, handshake: 6.17s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-tgond-notifications" at "2026-06-06T10:45:05.0797986Z"
+[Licensing::Module] Licensing Background thread has ended after 6.18s
+[Licensing::Module] Licensing is initialized (took 0.33s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 18966797524462-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  2.667 seconds
+- Loaded All Assemblies, in  2.520 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 1.68 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.92 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Package Manager log level set to [2]
@@ -180,1062 +182,102 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.948 seconds
-Domain Reload Profiling: 4608ms
-	BeginReloadAssembly (381ms)
+- Finished resetting the current domain, in  3.015 seconds
+Domain Reload Profiling: 5528ms
+	BeginReloadAssembly (783ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
+		DisableScriptedObjects (16ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (73ms)
-	RebuildCommonClasses (77ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (83ms)
-	LoadAllAssembliesAndSetupDomain (2094ms)
-		LoadAssemblies (1447ms)
+		CreateAndSetChildDomain (82ms)
+	RebuildCommonClasses (101ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (93ms)
+	LoadAllAssembliesAndSetupDomain (1505ms)
+		LoadAssemblies (963ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (856ms)
-			TypeCache.Refresh (446ms)
-				TypeCache.ScanAssembly (407ms)
-			BuildScriptInfoCaches (310ms)
-			ResolveRequiredComponents (79ms)
-	FinalizeReload (1949ms)
+		AnalyzeDomain (780ms)
+			TypeCache.Refresh (502ms)
+				TypeCache.ScanAssembly (470ms)
+			BuildScriptInfoCaches (231ms)
+			ResolveRequiredComponents (38ms)
+	FinalizeReload (3016ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1647ms)
+		SetupLoadedEditorAssemblies (2650ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (12ms)
-			BeforeProcessingInitializeOnLoad (419ms)
-			ProcessInitializeOnLoadAttributes (963ms)
-			ProcessInitializeOnLoadMethodAttributes (239ms)
-			AfterProcessingInitializeOnLoad (12ms)
-			EditorAssembliesLoaded (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (18ms)
+			BeforeProcessingInitializeOnLoad (648ms)
+			ProcessInitializeOnLoadAttributes (1558ms)
+			ProcessInitializeOnLoadMethodAttributes (399ms)
+			AfterProcessingInitializeOnLoad (22ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (26ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.82 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (30ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 2.55 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7315 unused Assets / (5.1 MB). Loaded Objects now: 8136.
-Memory consumption went from 152.9 MB to 147.9 MB.
-Total: 15.764100 ms (FindLiveObjects: 1.791600 ms CreateObjectMapping: 1.676300 ms MarkObjects: 8.689300 ms  DeleteObjects: 3.605000 ms)
+Unloading 7315 unused Assets / (5.2 MB). Loaded Objects now: 8136.
+Memory consumption went from 156.4 MB to 151.2 MB.
+Total: 24.376600 ms (FindLiveObjects: 1.352800 ms CreateObjectMapping: 1.346000 ms MarkObjects: 15.560500 ms  DeleteObjects: 6.114500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19408.405322 seconds.
-  path: Assets/Audio/Audio
-  artifactKey: Guid(8d64659da96a4fe428ff2d3a6f3141d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Audio using Guid(8d64659da96a4fe428ff2d3a6f3141d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fab18249ed826fa8fe7667bfbd6e4d11') in 0.0098493 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 2674.843364 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/pulse-2.png
+  artifactKey: Guid(2819ebed01ac66f47a41134c5d8a95df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/horizontal/pulse-2.png using Guid(2819ebed01ac66f47a41134c5d8a95df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d2511ea3ac5bec5206f81da09dde198') in 0.2590574 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.065482 seconds.
-  path: Assets/Audio/Audio/footstep_carpet_000.ogg
-  artifactKey: Guid(3dcc5aa05cf43f14aadc84380614b4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Audio/footstep_carpet_000.ogg using Guid(3dcc5aa05cf43f14aadc84380614b4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fc9588f274130bf50714471e4b1cb098') in 0.110309 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000057 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/pulse-empty-3.png
+  artifactKey: Guid(25c17a46949582d4d98b0c8f10786db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/horizontal/pulse-empty-3.png using Guid(25c17a46949582d4d98b0c8f10786db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9fc8d2ea114fa633bdf1687d4492f7e4') in 0.019633 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Audio/Audio/footstep_wood_000.ogg
-  artifactKey: Guid(0a9153e13812b3c49976001d64b3f0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Audio/footstep_wood_000.ogg using Guid(0a9153e13812b3c49976001d64b3f0ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '60e92d36f29f2744974579c0f6639480') in 0.0100855 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Audio/Audio/footstep_concrete_003.ogg
-  artifactKey: Guid(70700ffcba1b9204aa55218c483f404f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Audio/footstep_concrete_003.ogg using Guid(70700ffcba1b9204aa55218c483f404f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a199174013ef58a1ea70af75542450a6') in 0.0130648 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Audio/Audio/footstep_grass_001.ogg
-  artifactKey: Guid(5be5645bdec32d74fbb01e862d748915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Audio/footstep_grass_001.ogg using Guid(5be5645bdec32d74fbb01e862d748915) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cbb467bc59d180f3ee06d4ebe6f4c7bf') in 0.0100786 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Audio/Audio/footstep_concrete_004.ogg
-  artifactKey: Guid(ca773b8b2becf8d42991a66cff448628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Audio/footstep_concrete_004.ogg using Guid(ca773b8b2becf8d42991a66cff448628) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f414d95b4f641e18f58a6a1a40c30606') in 0.0068655 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Audio/Audio/footstep_snow_004.ogg
-  artifactKey: Guid(ee28bef813a5fb04ea50bae5014a0f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Audio/footstep_snow_004.ogg using Guid(ee28bef813a5fb04ea50bae5014a0f9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '389c5ba3bf74b74387a443c56592a7d4') in 0.0076006 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Audio/Audio/impactBell_heavy_003.ogg
-  artifactKey: Guid(d06f243f8ae200b42afa045ea6370c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Audio/impactBell_heavy_003.ogg using Guid(d06f243f8ae200b42afa045ea6370c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b66eae88e5c60636c16edb26f2be802') in 0.0115477 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Audio/Audio/footstep_grass_004.ogg
-  artifactKey: Guid(f6d941f44a8aecf43839bd2a144923de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Audio/footstep_grass_004.ogg using Guid(f6d941f44a8aecf43839bd2a144923de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d72fb4933a646299a117c699e4886dc') in 0.0071242 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Audio/Audio/footstep_snow_003.ogg
-  artifactKey: Guid(6a7c3b702d316e044a67d1d3f2c0205c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Audio/footstep_snow_003.ogg using Guid(6a7c3b702d316e044a67d1d3f2c0205c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76d9b4903b54e4e633b0217c1525ddbc') in 0.0101888 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.884148 seconds.
-  path: Assets/Audio/Gameplay
-  artifactKey: Guid(d86e74298bc0ab94fb47192b4c801831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay using Guid(d86e74298bc0ab94fb47192b4c801831) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '579dc2ec62e519a777d967aba4485e40') in 0.001106 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.844603 seconds.
-  path: Assets/Audio/Gameplay
-  artifactKey: Guid(d86e74298bc0ab94fb47192b4c801831) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay using Guid(d86e74298bc0ab94fb47192b4c801831) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ab2dd8222412c47ac231c1c49c9334a3') in 0.0411569 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.964752 seconds.
-  path: Assets/Audio/UI
-  artifactKey: Guid(191a27dc21c031c4881d23e8d2da81d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/UI using Guid(191a27dc21c031c4881d23e8d2da81d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd363ddad8b036f2c448e7b293b6017c8') in 0.0009779 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.957935 seconds.
-  path: Assets/Audio/UI
-  artifactKey: Guid(191a27dc21c031c4881d23e8d2da81d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI using Guid(191a27dc21c031c4881d23e8d2da81d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7dca24608d653cfc904afe68ac2fa14a') in 0.0058017 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 42.747367 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactMetal_heavy_003.ogg
-  artifactKey: Guid(5c2f559b33682d949a9b288655b7010b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactMetal_heavy_003.ogg using Guid(5c2f559b33682d949a9b288655b7010b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6c373bc20c12123fd54147da433865c0') in 0.15182 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  Time since last request: 0.000066 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/pulse-full-2.png
+  artifactKey: Guid(1f66fc9dd416206408140e025ef174d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/horizontal/pulse-full-2.png using Guid(1f66fc9dd416206408140e025ef174d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd4394a1c450acb25c2e31f2b85a3dd04') in 0.0173947 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000026 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPlank_medium_000.ogg
-  artifactKey: Guid(6221211f139499543b15c79dd3e1423f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPlank_medium_000.ogg using Guid(6221211f139499543b15c79dd3e1423f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3b1c892ca400ee309493343fc187217b') in 0.0804891 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  path: Assets/UI/healthbar/pulse/horizontal/pulse-full-1.png
+  artifactKey: Guid(e14d5f5bd18eeb9428669fae38afd7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/healthbar/pulse/horizontal/pulse-full-1.png using Guid(e14d5f5bd18eeb9428669fae38afd7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9490911cadd8c5f5b4bfc572513ae07b') in 0.0150655 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.263770 seconds.
+  path: Assets/UI/healthbar/pulse/horizontal/pulse-empty-1.png
+  artifactKey: Guid(f263844a407f136429546a1c542c684a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI/healthbar/pulse/horizontal/pulse-empty-1.png using Guid(f263844a407f136429546a1c542c684a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '57d0ee7f185c05f804fced06ca788c2c') in 0.4067224 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000032 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPlank_medium_002.ogg
-  artifactKey: Guid(b368f9840fea9a2478a4d8b80aa92fd1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPlank_medium_002.ogg using Guid(b368f9840fea9a2478a4d8b80aa92fd1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aab1d3cbd4d99d989f7f723b56038b85') in 0.0893201 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_carpet_001.ogg
-  artifactKey: Guid(abaa7d01daec3564d959c7385c0b2629) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/footstep_carpet_001.ogg using Guid(abaa7d01daec3564d959c7385c0b2629) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5567270d0c70cd7f3da932675994277b') in 0.1171618 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPunch_heavy_002.ogg
-  artifactKey: Guid(c376529d8c657ea40879d57a6cb0f54a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPunch_heavy_002.ogg using Guid(c376529d8c657ea40879d57a6cb0f54a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2b75ed5841630f66f2c134a063633151') in 0.151483 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPlate_medium_003.ogg
-  artifactKey: Guid(3ae9c0d881170864091ef867fd5f0c2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPlate_medium_003.ogg using Guid(3ae9c0d881170864091ef867fd5f0c2b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '10d6424fc4beff81bd78d3fb96d686af') in 0.9243705 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactTin_medium_002.ogg
-  artifactKey: Guid(bff046dafaa39ff4893a67e105e78e45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactTin_medium_002.ogg using Guid(bff046dafaa39ff4893a67e105e78e45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '481e8fb9b980ff34c80ad7ac4379ace0') in 0.1559164 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactGlass_medium_000.ogg
-  artifactKey: Guid(50706957ab5ff4a4b847d47efbc2a539) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactGlass_medium_000.ogg using Guid(50706957ab5ff4a4b847d47efbc2a539) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4f287cec349d84ec6b3a14807f2e9a0b') in 0.1022867 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPlank_medium_004.ogg
-  artifactKey: Guid(8feafcb5ea5bde44c879b5342307d67e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPlank_medium_004.ogg using Guid(8feafcb5ea5bde44c879b5342307d67e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2fbda5ea36fb1717da432b33d50a183e') in 0.0871103 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactMining_004.ogg
-  artifactKey: Guid(2dce4d15c8c24ac44b80fc275dd82b54) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactMining_004.ogg using Guid(2dce4d15c8c24ac44b80fc275dd82b54) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e8196bb248abe6bbff568ddb005a09b0') in 0.1034982 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPunch_medium_004.ogg
-  artifactKey: Guid(fb2a4a7721d5dec43a2b2dc49cc5f434) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPunch_medium_004.ogg using Guid(fb2a4a7721d5dec43a2b2dc49cc5f434) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ebad6e3df17b97181019af8bfbb5d592') in 0.0963173 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPunch_heavy_004.ogg
-  artifactKey: Guid(64c188129e433c34d81424e874b40424) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPunch_heavy_004.ogg using Guid(64c188129e433c34d81424e874b40424) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '13c19e3637ab538d7e1cd85d5128c490') in 0.0852092 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactWood_light_000.ogg
-  artifactKey: Guid(880eaf2927dabb34abc2074e1f401a07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactWood_light_000.ogg using Guid(880eaf2927dabb34abc2074e1f401a07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5a84407e47f5e0d0d3fe37213dc029b3') in 0.0908548 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000091 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_grass_002.ogg
-  artifactKey: Guid(e9b95e28f5b3f2149834f3f0e3d2f6c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/footstep_grass_002.ogg using Guid(e9b95e28f5b3f2149834f3f0e3d2f6c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b7553d7e0ea81e07cb9a3cc97994a4cb') in 0.0820861 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPlank_medium_003.ogg
-  artifactKey: Guid(e251d60232ec32e40b0d623800de082a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPlank_medium_003.ogg using Guid(e251d60232ec32e40b0d623800de082a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '262dabfa104cadf76a3d990a92921529') in 0.0866353 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactMetal_heavy_002.ogg
-  artifactKey: Guid(641bd1ff2082d6e4aaaefada16036f73) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactMetal_heavy_002.ogg using Guid(641bd1ff2082d6e4aaaefada16036f73) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ac4a3ac01cd3cb57a877f8fe12a4af29') in 0.0820813 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPunch_medium_000.ogg
-  artifactKey: Guid(0b4537767cc5be04a82a058a82442863) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPunch_medium_000.ogg using Guid(0b4537767cc5be04a82a058a82442863) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b856fe7e2087a8486280bd9d89c8b30e') in 0.090609 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactTin_medium_003.ogg
-  artifactKey: Guid(30d82a4f387eada458f6fcc0fb62b946) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactTin_medium_003.ogg using Guid(30d82a4f387eada458f6fcc0fb62b946) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f1cf220ddbab98d05b5001572c30108e') in 0.0808179 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPlate_heavy_003.ogg
-  artifactKey: Guid(b1e1721cb02f7e4428504c9dfa169f3a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPlate_heavy_003.ogg using Guid(b1e1721cb02f7e4428504c9dfa169f3a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e727e8c354e2b357a4a9591ed629f0b6') in 0.103244 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPlate_light_004.ogg
-  artifactKey: Guid(e7aab8df93d2b9945b0b8b0cfe76ae31) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPlate_light_004.ogg using Guid(e7aab8df93d2b9945b0b8b0cfe76ae31) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '68c9757604c82b688801f0f4ed9eaa3f') in 0.0867459 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactGlass_heavy_001.ogg
-  artifactKey: Guid(9ed303ed9728f3b488a012b10974da46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactGlass_heavy_001.ogg using Guid(9ed303ed9728f3b488a012b10974da46) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '006a709fa41833c3f930b246475feea0') in 0.0815455 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_wood_000.ogg
-  artifactKey: Guid(2ee5bdb97830fb14b960f68d2f41e7bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/footstep_wood_000.ogg using Guid(2ee5bdb97830fb14b960f68d2f41e7bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1a3f5069cab3e35103774ecf0c3fcda2') in 0.0788956 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPlate_heavy_002.ogg
-  artifactKey: Guid(008f57371e191dc4d93e5ecf56a20d45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPlate_heavy_002.ogg using Guid(008f57371e191dc4d93e5ecf56a20d45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '69b7a2b4e3e2938bee62bbd4350cc860') in 0.0772617 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_concrete_004.ogg
-  artifactKey: Guid(869c88b0a8560d34ba40776d133ccfd9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/footstep_concrete_004.ogg using Guid(869c88b0a8560d34ba40776d133ccfd9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b96d6a4297f28b0ffb2e2cd0ea6871d5') in 0.0789036 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPlate_medium_000.ogg
-  artifactKey: Guid(2c0a41687b24963418ed1826dc3d6691) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPlate_medium_000.ogg using Guid(2c0a41687b24963418ed1826dc3d6691) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aab278f05fee60cc92cab83514c24397') in 0.0848894 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactBell_heavy_002.ogg
-  artifactKey: Guid(15de94ae26e9b31429034525782d78d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactBell_heavy_002.ogg using Guid(15de94ae26e9b31429034525782d78d8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '091416d6597846a8acdb2c02dde900d9') in 0.0899656 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPlank_medium_001.ogg
-  artifactKey: Guid(11628f721fd6d9f4aa611951f8d05cff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPlank_medium_001.ogg using Guid(11628f721fd6d9f4aa611951f8d05cff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '166b8c59a29484b8428ec621391f1343') in 0.0858374 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactWood_medium_001.ogg
-  artifactKey: Guid(1c9c856b6e6266f44877b7f1f11f9a17) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactWood_medium_001.ogg using Guid(1c9c856b6e6266f44877b7f1f11f9a17) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b72ace7593237c6184410b03e9436ae0') in 0.0860769 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactBell_heavy_000.ogg
-  artifactKey: Guid(db5289b7b47dd7d42ba329fc4f653458) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactBell_heavy_000.ogg using Guid(db5289b7b47dd7d42ba329fc4f653458) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '09ef1ccd7e5cda15bfd792b0c27e6cbe') in 0.0726612 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPlate_heavy_001.ogg
-  artifactKey: Guid(5ae2669a3b9f49b42a4e6a279771754c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPlate_heavy_001.ogg using Guid(5ae2669a3b9f49b42a4e6a279771754c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cf836393d15b944ec2f9d184751b2051') in 0.0798831 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactGlass_heavy_002.ogg
-  artifactKey: Guid(6fbd8b37ebe29cb47b45398f83bf86be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactGlass_heavy_002.ogg using Guid(6fbd8b37ebe29cb47b45398f83bf86be) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd142ef38fd81babcb7357fc9c7dabfaa') in 0.0756507 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactSoft_heavy_003.ogg
-  artifactKey: Guid(7892c3bbcd2389a4ca7c9cfe4d3b4630) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactSoft_heavy_003.ogg using Guid(7892c3bbcd2389a4ca7c9cfe4d3b4630) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd8be76787f0e495d59bc2c6b9244820c') in 0.0762537 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPunch_medium_001.ogg
-  artifactKey: Guid(b72924a57948c3f4a8e96e7028c9aad8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPunch_medium_001.ogg using Guid(b72924a57948c3f4a8e96e7028c9aad8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a052587e0bcb54afd4d67b5f68b7fdc3') in 0.0688039 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_wood_004.ogg
-  artifactKey: Guid(83565a522f99f984ebdad81c2bcdb2db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/footstep_wood_004.ogg using Guid(83565a522f99f984ebdad81c2bcdb2db) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7a20499ef398058796612cd6ee7a6123') in 0.0871673 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Audio/Gameplay/Audio
-  artifactKey: Guid(490b00600b4b57847b85a6879f95b563) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio using Guid(490b00600b4b57847b85a6879f95b563) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f5e0895be2d4ad824d5326978e68c072') in 0.0053752 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_grass_000.ogg
-  artifactKey: Guid(790e103f437039b4681e02eafc0a9e97) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/footstep_grass_000.ogg using Guid(790e103f437039b4681e02eafc0a9e97) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '62b8f48e1179d8bdcf26d80ab53f3730') in 0.0795368 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactMining_003.ogg
-  artifactKey: Guid(cf54dd68c24248442bd44ed5b85d68f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactMining_003.ogg using Guid(cf54dd68c24248442bd44ed5b85d68f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9f9dd9ea9c67bcfe871ab387590a92fc') in 0.0813841 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactBell_heavy_001.ogg
-  artifactKey: Guid(5673b0384ec79334d990bdcd247f59f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactBell_heavy_001.ogg using Guid(5673b0384ec79334d990bdcd247f59f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f09482bc17246d613e683457bd944774') in 0.0853317 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactMetal_light_002.ogg
-  artifactKey: Guid(c76151125c9c3244687dc1d90b03adaf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactMetal_light_002.ogg using Guid(c76151125c9c3244687dc1d90b03adaf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f79a6d498bc95faec89887e13c72d6ab') in 0.0894914 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPlate_light_003.ogg
-  artifactKey: Guid(8658c8dd7e3cdf14e9d1f137ac894764) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPlate_light_003.ogg using Guid(8658c8dd7e3cdf14e9d1f137ac894764) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '00bea9f6e2b8caf5536e5a6ac4fc1a1d') in 0.0762172 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactMetal_medium_000.ogg
-  artifactKey: Guid(a592970558832724c900f0cae5f20cd5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactMetal_medium_000.ogg using Guid(a592970558832724c900f0cae5f20cd5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3c55282d4a349fc5b303bb437fc26757') in 0.0738386 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+  path: Assets/UI/healthbar/pulse/horizontal/pulse-full-1.png
+  artifactKey: Guid(e14d5f5bd18eeb9428669fae38afd7cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI/healthbar/pulse/horizontal/pulse-full-1.png using Guid(e14d5f5bd18eeb9428669fae38afd7cc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f5c82c3d41d9679d454bca72d93d0c46') in 0.0337781 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000046 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPunch_medium_003.ogg
-  artifactKey: Guid(7d409564c8bfdbb4fafaf7c88aa06535) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPunch_medium_003.ogg using Guid(7d409564c8bfdbb4fafaf7c88aa06535) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '32133e2421db5ffe6dc1c1695dc167d5') in 0.0907424 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactGlass_light_003.ogg
-  artifactKey: Guid(dcfc01e25e0b9014da9041c49b14e90e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactGlass_light_003.ogg using Guid(dcfc01e25e0b9014da9041c49b14e90e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '582a3dfaf9de15e88a367ce2e1f56bbe') in 0.0798993 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactMetal_medium_002.ogg
-  artifactKey: Guid(ceaff1c31eab94f41bffe15f7f581016) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactMetal_medium_002.ogg using Guid(ceaff1c31eab94f41bffe15f7f581016) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '553d55d9f09044bacdb665d3b915b18c') in 0.0758287 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactGeneric_light_000.ogg
-  artifactKey: Guid(9356b96fff0437942b3ada11374eaa44) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactGeneric_light_000.ogg using Guid(9356b96fff0437942b3ada11374eaa44) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '825c39738e48b92120e0827c73970370') in 0.0826664 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_grass_004.ogg
-  artifactKey: Guid(7d9de598abef5f04e8834f1330ff4e5a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/footstep_grass_004.ogg using Guid(7d9de598abef5f04e8834f1330ff4e5a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd78170687aeafcf2e00a881a0fbcef2c') in 0.0826126 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactSoft_medium_003.ogg
-  artifactKey: Guid(59d5b0382bc727148bd7bb986cda4a72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactSoft_medium_003.ogg using Guid(59d5b0382bc727148bd7bb986cda4a72) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '92f9eba6ceb27e8cc0a3483d33b7f107') in 0.0768732 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactTin_medium_004.ogg
-  artifactKey: Guid(9dc0fdc6ecad35a438be08d5fb77ebe4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactTin_medium_004.ogg using Guid(9dc0fdc6ecad35a438be08d5fb77ebe4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1ff12232de328d0932b4defd39ad7fe3') in 0.0825373 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Audio/Gameplay/License.txt
-  artifactKey: Guid(4dbe21640a60db34db6e8f9439bb2c28) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/License.txt using Guid(4dbe21640a60db34db6e8f9439bb2c28) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '12387ee16fb501b243046ed68caaea51') in 0.0056111 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_snow_002.ogg
-  artifactKey: Guid(932bd91eac36c2d4fb2ef91dc8dda572) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/footstep_snow_002.ogg using Guid(932bd91eac36c2d4fb2ef91dc8dda572) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bbeecb8f40a168880f6ba1dafbc405e4') in 0.0715987 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPlate_light_002.ogg
-  artifactKey: Guid(6882037b3410ed548a8d25c7270f3483) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPlate_light_002.ogg using Guid(6882037b3410ed548a8d25c7270f3483) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2177f623eef64d6472dbb3a4966398dd') in 0.0901902 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_concrete_003.ogg
-  artifactKey: Guid(25d176c7f4950504497bb0e2779eae51) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/footstep_concrete_003.ogg using Guid(25d176c7f4950504497bb0e2779eae51) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '343150f2b602b7bb647583384c8c9e23') in 0.0820957 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactWood_heavy_001.ogg
-  artifactKey: Guid(776692bc4ec91c44cb8474b1d9d76251) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactWood_heavy_001.ogg using Guid(776692bc4ec91c44cb8474b1d9d76251) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5db9240e19afd1ae790441b2357cd49a') in 0.0913189 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactGlass_light_000.ogg
-  artifactKey: Guid(89effb49ec511474f84226fff8d152ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactGlass_light_000.ogg using Guid(89effb49ec511474f84226fff8d152ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0e0fc18ca8227cef3b966705242b36e5') in 0.0786625 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_snow_000.ogg
-  artifactKey: Guid(1928d6978dfb56747bc83a8987f0e076) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/footstep_snow_000.ogg using Guid(1928d6978dfb56747bc83a8987f0e076) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cb133485a2c3671d2df89c9b88b0f1a5') in 0.0883103 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactGlass_light_002.ogg
-  artifactKey: Guid(287bdeadde1d5574c9aa0fd42611b7de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactGlass_light_002.ogg using Guid(287bdeadde1d5574c9aa0fd42611b7de) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '72acfcfaca1949aa0e2efe1e671e6872') in 0.0779999 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactMetal_medium_001.ogg
-  artifactKey: Guid(0ae002970aada1943a4ec041eaf861bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactMetal_medium_001.ogg using Guid(0ae002970aada1943a4ec041eaf861bd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bdf76e2f0721398e56ff4a90550cb90f') in 0.0838439 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPlate_medium_002.ogg
-  artifactKey: Guid(4c8ca0e938cdd6e4d8a8a1366aa8f689) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPlate_medium_002.ogg using Guid(4c8ca0e938cdd6e4d8a8a1366aa8f689) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dbd7578fa988390835279ff9af4b8ac3') in 0.0837268 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPlate_medium_001.ogg
-  artifactKey: Guid(0e08fb101372b644a8d08bedbf15e8ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPlate_medium_001.ogg using Guid(0e08fb101372b644a8d08bedbf15e8ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a8df0484fc1fbc9577f1784156a2b63c') in 0.0861123 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactPlate_light_000.ogg
-  artifactKey: Guid(19909705b4898f7408addf13c8c3bfc4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactPlate_light_000.ogg using Guid(19909705b4898f7408addf13c8c3bfc4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bf560542cc2b4ce740c5ca1cd85df274') in 0.0807114 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactGlass_medium_002.ogg
-  artifactKey: Guid(86a542226da6b6a4fb78b8455fafc6af) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactGlass_medium_002.ogg using Guid(86a542226da6b6a4fb78b8455fafc6af) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8de8191a46e16e1edb7f32d3c56468b9') in 0.0749572 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactWood_heavy_000.ogg
-  artifactKey: Guid(33e8b20935d69c64f9c72434973cdaa1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactWood_heavy_000.ogg using Guid(33e8b20935d69c64f9c72434973cdaa1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '41903e2dfba9bb3216e3a802138cfe35') in 0.0838435 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactSoft_medium_004.ogg
-  artifactKey: Guid(371186dbb908a9b4cbad9f4ba006f373) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactSoft_medium_004.ogg using Guid(371186dbb908a9b4cbad9f4ba006f373) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '55fd85f5b7ccfeb3b5e19ce94a7e1314') in 0.0741813 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Audio/Gameplay/Kenney.url
-  artifactKey: Guid(ce09b806a9047084eb4f8f9a819d6294) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Kenney.url using Guid(ce09b806a9047084eb4f8f9a819d6294) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '82d6eb43363744bb5af02adc9edd06e3') in 0.0056705 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_grass_001.ogg
-  artifactKey: Guid(c3d9afa020eab6a4d9b6fb886c36f456) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/footstep_grass_001.ogg using Guid(c3d9afa020eab6a4d9b6fb886c36f456) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd3e6118d5582e58abe0569f0f79d6936') in 0.0830379 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactSoft_heavy_004.ogg
-  artifactKey: Guid(8e8983d04b3534a43966b62117fb3b11) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactSoft_heavy_004.ogg using Guid(8e8983d04b3534a43966b62117fb3b11) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b7df213b06dfd159e76bbc0032da1ce3') in 0.0738499 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_snow_001.ogg
-  artifactKey: Guid(ea2dd1c92bd42d747a6eb3d370c271ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/footstep_snow_001.ogg using Guid(ea2dd1c92bd42d747a6eb3d370c271ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '087eeccef33068632aaa4a0457ff8a63') in 0.0736717 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactMetal_heavy_004.ogg
-  artifactKey: Guid(1dd033475ea6ae14aa42e2293b34f4e1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/Gameplay/Audio/impactMetal_heavy_004.ogg using Guid(1dd033475ea6ae14aa42e2293b34f4e1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c6270de2bd0f1e4d01cb3c7f6117561f') in 0.0819585 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.298693 seconds.
-  path: Assets/Audio/UI/Audio/minimize_002.ogg
-  artifactKey: Guid(d4fae2d76ebfff64aa7f7119801678bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/minimize_002.ogg using Guid(d4fae2d76ebfff64aa7f7119801678bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b380e99f378be9200766f5c5979fb850') in 0.0456642 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Audio/UI/Audio/toggle_002.ogg
-  artifactKey: Guid(95bf359cb8806174b84b73a359b43fee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/toggle_002.ogg using Guid(95bf359cb8806174b84b73a359b43fee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1e31cdc0eaa8b448900dc30d916dfc2a') in 0.0772731 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Audio/UI/Audio/drop_001.ogg
-  artifactKey: Guid(019180f7bd138b247afa933158037594) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/drop_001.ogg using Guid(019180f7bd138b247afa933158037594) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9b63083d3a23d2338e130a01f3c0b3c9') in 0.0900674 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Audio/UI/Audio/select_002.ogg
-  artifactKey: Guid(b2e20c7243f88a242af9ed5adc6efd81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/select_002.ogg using Guid(b2e20c7243f88a242af9ed5adc6efd81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'da84c087b9190a2366911810156fb865') in 0.0756911 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Audio/UI/Kenney.url
-  artifactKey: Guid(2ee1383c38886e94bb357d08bdc56267) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Kenney.url using Guid(2ee1383c38886e94bb357d08bdc56267) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ecdeb002171aea4361fbaba3b3d4a7ab') in 0.0075889 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Audio/UI/Audio/glitch_001.ogg
-  artifactKey: Guid(48b77ccdab06ab24880ce996a5f23772) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/glitch_001.ogg using Guid(48b77ccdab06ab24880ce996a5f23772) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6d6f4809f20b65f0f90fd7d7d6262632') in 0.0812532 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Audio/UI/Audio/glass_003.ogg
-  artifactKey: Guid(a7688a77bc8d03046b64397bbde9840e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/glass_003.ogg using Guid(a7688a77bc8d03046b64397bbde9840e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '978ff69dd9cea95d78150151ed955dd4') in 0.1837679 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Audio/UI/Audio/minimize_008.ogg
-  artifactKey: Guid(6d28d9f7e61ffe547bf0190c65173023) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/minimize_008.ogg using Guid(6d28d9f7e61ffe547bf0190c65173023) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '89fa5c11f123058d8107fcbe44f678f5') in 0.0628446 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Audio/UI/Audio/switch_004.ogg
-  artifactKey: Guid(97a4087054da66245be9fb5db3c1d015) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/switch_004.ogg using Guid(97a4087054da66245be9fb5db3c1d015) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '042208568ee35087593c14310f9ef80b') in 0.0999176 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Audio/UI/Audio/click_004.ogg
-  artifactKey: Guid(e7ce5f07d260a704794a6d09de1fdab8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/click_004.ogg using Guid(e7ce5f07d260a704794a6d09de1fdab8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c1b6370798decad7bcf78e19ae335d4f') in 0.0495361 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Audio/UI/Audio/scroll_005.ogg
-  artifactKey: Guid(c29dde9108436f74ebfeb54494969a0c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/scroll_005.ogg using Guid(c29dde9108436f74ebfeb54494969a0c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5e0ab824d92000bb811cdb6e365ea0d2') in 0.0491678 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Audio/UI/Audio/confirmation_002.ogg
-  artifactKey: Guid(5c2f856afb49ea942be861b0b9ae0239) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/confirmation_002.ogg using Guid(5c2f856afb49ea942be861b0b9ae0239) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bbdc4a1a0590c470169313cd1877cccd') in 0.0532935 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Audio/UI/Audio/error_006.ogg
-  artifactKey: Guid(3d97122a729b47142ab03a7983544813) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/error_006.ogg using Guid(3d97122a729b47142ab03a7983544813) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd4de45d718aba1b10087476f6f5480fc') in 0.2336633 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Audio/UI/Audio/pluck_001.ogg
-  artifactKey: Guid(4150f64e41dbe6545bd1f32ae600b7d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/pluck_001.ogg using Guid(4150f64e41dbe6545bd1f32ae600b7d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ddc0b45caaada508e9a0ea1032922e1c') in 0.1395485 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Audio/UI/Audio/switch_007.ogg
-  artifactKey: Guid(b4fb3d4acab3a7e429ba5c978a837e22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/switch_007.ogg using Guid(b4fb3d4acab3a7e429ba5c978a837e22) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3427009a4952e28f5e0207a0d6e581ea') in 0.2216654 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Audio/UI/Audio/click_003.ogg
-  artifactKey: Guid(5dfc4b575ab5cab44a29ec46ffcced5b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/click_003.ogg using Guid(5dfc4b575ab5cab44a29ec46ffcced5b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b8087171e26d2bee29a1a742331b651c') in 0.0375372 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Audio/UI/Audio/select_005.ogg
-  artifactKey: Guid(655d341e095fdc14096e512214c0c15a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/select_005.ogg using Guid(655d341e095fdc14096e512214c0c15a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'edd266cc995bf7bf88b83619e011c697') in 0.0533539 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Audio/UI/Audio/open_001.ogg
-  artifactKey: Guid(1f11a84c2d52b104682f5025a905c08c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/open_001.ogg using Guid(1f11a84c2d52b104682f5025a905c08c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a687447994cfa377b2537d4576523b02') in 0.0418187 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/Audio/UI/Audio/click_002.ogg
-  artifactKey: Guid(4517740930700c1478f9bcfa7ceb3be2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/click_002.ogg using Guid(4517740930700c1478f9bcfa7ceb3be2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cfbe440ebc3e621cfab654e67d438362') in 0.045188 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/Audio/UI/Audio/minimize_005.ogg
-  artifactKey: Guid(fd7f3aa47a1c1c448ab3ed71576f9734) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/minimize_005.ogg using Guid(fd7f3aa47a1c1c448ab3ed71576f9734) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c7ec0bddd99e1ea3a3ea5aee4649fcf6') in 0.0420164 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Audio/UI/Audio/close_003.ogg
-  artifactKey: Guid(6bd58049c57e68d4db45f9df598c66d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/close_003.ogg using Guid(6bd58049c57e68d4db45f9df598c66d5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'af543c7f628403f2526ec5ec17adcd8d') in 0.0439176 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Audio/UI/Audio/toggle_003.ogg
-  artifactKey: Guid(b6337d00993869a49a75fcd8d0e5ed7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/toggle_003.ogg using Guid(b6337d00993869a49a75fcd8d0e5ed7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '02595d93a98d5718234cc6b4c73bf1e7') in 0.053233 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Audio/UI/Audio/open_003.ogg
-  artifactKey: Guid(3709d50283864ad4cb7636e35b5f411f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/open_003.ogg using Guid(3709d50283864ad4cb7636e35b5f411f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '72347339f2dd49b4478257503ddfe8b7') in 0.0466209 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Audio/UI/Audio/scroll_004.ogg
-  artifactKey: Guid(8775c83eeb6d7a843875e24a3f88d2aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/scroll_004.ogg using Guid(8775c83eeb6d7a843875e24a3f88d2aa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'addf100d759a10dfb227f081bae42121') in 0.0457868 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Audio/UI/Audio/maximize_009.ogg
-  artifactKey: Guid(acd79063f8d07f544a853dfd81fd6507) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/maximize_009.ogg using Guid(acd79063f8d07f544a853dfd81fd6507) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '35b128e3910d02af9245220aecb6b11a') in 0.0539312 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Audio/UI/Audio/maximize_005.ogg
-  artifactKey: Guid(817391a059ee8c94597e280b64a5daa0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/maximize_005.ogg using Guid(817391a059ee8c94597e280b64a5daa0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '515812331a0b7a6dd0e74a84e0b6d157') in 0.0468574 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Audio/UI/Audio/error_001.ogg
-  artifactKey: Guid(d13e38cf2d3c48843bd0a8e1589ee63a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Audio/UI/Audio/error_001.ogg using Guid(d13e38cf2d3c48843bd0a8e1589ee63a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '22aa7bcdd572f40a610c667f47dd995e') in 0.0730855 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 145.755965 seconds.
-  path: Assets/Audio/Gameplay/Audio
-  artifactKey: Guid(490b00600b4b57847b85a6879f95b563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio using Guid(490b00600b4b57847b85a6879f95b563) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0b84236ceeb2ffa6c2988e05281231df') in 0.0006211 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.025665 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_carpet_000.ogg
-  artifactKey: Guid(6d34302c0398ffc4695a6a5a2799fddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio/footstep_carpet_000.ogg using Guid(6d34302c0398ffc4695a6a5a2799fddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ac1de9c80b9028fb7c079eff8968346') in 0.0110929 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_carpet_004.ogg
-  artifactKey: Guid(ffde064f1d638c54ca1f6dd3321cdacf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio/footstep_carpet_004.ogg using Guid(ffde064f1d638c54ca1f6dd3321cdacf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f7ed5d6321956575ed75ed6697573d10') in 0.0094519 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactBell_heavy_000.ogg
-  artifactKey: Guid(db5289b7b47dd7d42ba329fc4f653458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio/impactBell_heavy_000.ogg using Guid(db5289b7b47dd7d42ba329fc4f653458) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d7488b4117c119bf2a169a98a12c1af') in 0.0084606 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_snow_001.ogg
-  artifactKey: Guid(ea2dd1c92bd42d747a6eb3d370c271ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio/footstep_snow_001.ogg using Guid(ea2dd1c92bd42d747a6eb3d370c271ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b6ca49a8e4d3956fc1cba68f7a5d703') in 0.0136469 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_snow_000.ogg
-  artifactKey: Guid(1928d6978dfb56747bc83a8987f0e076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio/footstep_snow_000.ogg using Guid(1928d6978dfb56747bc83a8987f0e076) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0c822bebc1b8e4f65153d63857945e3c') in 0.0093341 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_grass_001.ogg
-  artifactKey: Guid(c3d9afa020eab6a4d9b6fb886c36f456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio/footstep_grass_001.ogg using Guid(c3d9afa020eab6a4d9b6fb886c36f456) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29fc5f42966987b2f1b8d5222be8709d') in 0.0117828 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_wood_000.ogg
-  artifactKey: Guid(2ee5bdb97830fb14b960f68d2f41e7bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio/footstep_wood_000.ogg using Guid(2ee5bdb97830fb14b960f68d2f41e7bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e67df06ed8daf9a56c86fcf781d92b9b') in 0.0082997 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactBell_heavy_002.ogg
-  artifactKey: Guid(15de94ae26e9b31429034525782d78d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio/impactBell_heavy_002.ogg using Guid(15de94ae26e9b31429034525782d78d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51a5258efd6165e6faf14f198432f989') in 0.0100595 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactGeneric_light_000.ogg
-  artifactKey: Guid(9356b96fff0437942b3ada11374eaa44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio/impactGeneric_light_000.ogg using Guid(9356b96fff0437942b3ada11374eaa44) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b89928242cedacb2eb916f8efee9ae3') in 0.0123857 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_grass_004.ogg
-  artifactKey: Guid(7d9de598abef5f04e8834f1330ff4e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio/footstep_grass_004.ogg using Guid(7d9de598abef5f04e8834f1330ff4e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '11b21553adf3af725ccba46d29200dda') in 0.0109328 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_carpet_003.ogg
-  artifactKey: Guid(1921940a018b15c40918fec69ef26313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio/footstep_carpet_003.ogg using Guid(1921940a018b15c40918fec69ef26313) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '82e204fa728204018c802723e32802e4') in 0.008548 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_wood_003.ogg
-  artifactKey: Guid(b560c501b60613849889482eb3fdc43f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio/footstep_wood_003.ogg using Guid(b560c501b60613849889482eb3fdc43f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd66e2695cef6cf6b03ab8df5c1c82b69') in 0.0080994 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_concrete_004.ogg
-  artifactKey: Guid(869c88b0a8560d34ba40776d133ccfd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio/footstep_concrete_004.ogg using Guid(869c88b0a8560d34ba40776d133ccfd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ff45fb8b60fd9bb8b6ab64db09eb0791') in 0.0102658 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactBell_heavy_004.ogg
-  artifactKey: Guid(583f78ee8290ed243b865a54ef32138a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio/impactBell_heavy_004.ogg using Guid(583f78ee8290ed243b865a54ef32138a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ab64b912dcf3aa411e57765d8d43016b') in 0.0071273 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactBell_heavy_003.ogg
-  artifactKey: Guid(83b9b14ea4ec10244bc78a6e6af816fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio/impactBell_heavy_003.ogg using Guid(83b9b14ea4ec10244bc78a6e6af816fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1db0faa776e838c34342b425ea352e26') in 0.0085231 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Audio/Gameplay/Audio/footstep_snow_002.ogg
-  artifactKey: Guid(932bd91eac36c2d4fb2ef91dc8dda572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio/footstep_snow_002.ogg using Guid(932bd91eac36c2d4fb2ef91dc8dda572) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd7b3beb1575057c9e1db353563ab0fed') in 0.0068842 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Audio/Gameplay/Audio/impactGeneric_light_002.ogg
-  artifactKey: Guid(a53598a558716a34b8fc048f625b4c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Gameplay/Audio/impactGeneric_light_002.ogg using Guid(a53598a558716a34b8fc048f625b4c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '88f08cae42a7ef16251addb4e7ff602b') in 0.0101623 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  path: Assets/UI/healthbar/pulse/horizontal/no-heart-pulse-empty-1.png
+  artifactKey: Guid(9635e0e1d8193464bb5f6e2de7f7bee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/UI/healthbar/pulse/horizontal/no-heart-pulse-empty-1.png using Guid(9635e0e1d8193464bb5f6e2de7f7bee0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a0b562cc57c82f5f9546bad37ce0555f') in 0.0419918 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
